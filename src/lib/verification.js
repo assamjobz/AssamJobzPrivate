@@ -1,4 +1,3 @@
-
 import React from "react";
 
 export const verification = {
@@ -7,8 +6,6 @@ export const verification = {
   },
   
   sendVerificationEmail: (email, code) => {
-    // In a real app, this would send an actual email
-    // For now, we'll simulate it by storing the code
     localStorage.setItem(`verification_${email}`, code);
     return true;
   },
